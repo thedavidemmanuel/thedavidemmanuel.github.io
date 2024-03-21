@@ -1,0 +1,84 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #0070ff;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.nav__item {
+    margin-left: 20px;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav__link.active {
+    /* Style for active link */
+}
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #0070ff;
+    color: white;
+    padding: 0 100px;
+}
+
+.hello-container {
+    width: 50%; /* Adjust as necessary */
+    text-align: left; /* Align text to the left */
+}
+
+.home__title {
+    font-size: 168px;
+    font-weight: bold;
+    color: #FAFAFF;
+    transition: opacity 2s cubic-bezier(0.5, 0, 0, 1), transform 2s cubic-bezier(0.5, 0, 0, 1);
+    /* Ensure the title is visible and not transformed by default */
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+}
+
+.lottie-container {
+    width: 40%; /* Adjust based on your animation's aspect ratio */
+    /* Height will be automatically set based on the content */
+}
+
+@media (max-width: 768px) {
+    .hello-container, .lottie-container {
+        width: 80%; /* Adjust for smaller screens */
+        margin-top: 20px;
+    }
+
+    .home__title {
+        font-size: 100px; /* Smaller font size for smaller screens */
+    }
+}
