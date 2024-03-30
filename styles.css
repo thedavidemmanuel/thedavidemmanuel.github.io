@@ -84,27 +84,7 @@ header {
 }
 
 /* Responsive styles */
-/* Medium screens / tablets */
-@media (max-width: 1024px) {
-    header {
-        padding: 20px 50px; /* Reduced padding */
-    }
-
-    .home-section {
-        padding: 0 50px; /* Reduced padding */
-    }
-
-    .home__title {
-        font-size: 120px; /* Slightly smaller title */
-    }
-}
-
-/* Smaller screens / large phones */
 @media (max-width: 768px) {
-    header {
-        padding: 10px 20px; /* Further reduced padding */
-    }
-
     .nav__list {
         flex-direction: column;
         align-items: flex-start;
@@ -115,34 +95,14 @@ header {
     }
 
     .hello-container, .lottie-container {
-        width: 100%; /* Use full width */
+        width: 80%;
+        margin-top: 20px;
     }
 
     .home__title {
-        font-size: 48px; /* Much smaller title for smaller screens */
-        line-height: 0.9; /* Adjust line height to fit smaller screens */
+        font-size: 5rem; /* Smaller font size for mobile */
     }
 }
-
-/* Very small devices */
-@media (max-width: 480px) {
-    header {
-        padding: 10px 15px; /* Reduce padding even more */
-    }
-
-    .nav__list {
-        display: none; /* Optionally hide navigation on very small screens, or convert to a hamburger menu */
-    }
-
-    .hello-container {
-        margin-top: 10px; /* Adjust as needed */
-    }
-
-    .home__title {
-        font-size: 36px; /* Adjust for very small screens */
-    }
-}
-
 
 /* Background video styles */
 #background-video {
