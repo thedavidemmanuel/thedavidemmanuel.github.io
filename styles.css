@@ -17,7 +17,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Aligns logo and nav items to opposite ends */
-    padding: 20px 2rem; /* Top/bottom padding: 20px, Left/right padding: 2rem */
+    padding: 20px 100px; /* Top/bottom padding: 20px, Left/right padding: 2rem */
     width: 100%;
     position: fixed;
     top: 0;
