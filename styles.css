@@ -30,7 +30,7 @@ header {
     color: white;
     font-size: 15px; /* Same font size for consistency with nav items */
     text-decoration: none;
-    font-weight: 700; /* Bold for logo */
+    font-weight: 400; /* Bold for logo */
   }
   
   /* Nav list styles */
