@@ -42,6 +42,10 @@ const Home = () => {
         <p>Hello, it's me (Not Adele)</p>
         <h1>David Emmanuel</h1>
         <p>I am a <span ref={typingTextRef} className="typing-text"></span><span className="cursor">|</span></p>
+        <div className="button-container">
+          <button className="resume-button">View Resume</button>
+          <button className="about-button">About</button>
+        </div>
       </div>
 
       <div className="home-image">
