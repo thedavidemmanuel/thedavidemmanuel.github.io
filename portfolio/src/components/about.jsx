@@ -5,7 +5,7 @@ import Skills from './skills';
 
 const About = () => {
     return (
-        <div className="about-container">
+        <div id="about-me-section" className="about-container">
             <div className="about-content-wrapper">
                 <div className="programmer-gif">
                     <img src={Programmer} alt="programmer-gif" />

@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -15,6 +20,7 @@
     background-color: #77E4C8;
     padding: 100px 5%;
     padding-top: 150px;
+    padding-bottom: 120px;
     
 }
 

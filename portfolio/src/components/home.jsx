@@ -43,9 +43,15 @@ const Home = () => {
         <h1>David Emmanuel</h1>
         <p>I am a <span className="typing-text" ref={typingTextRef}></span></p>
         <div className="button-container">
-          <button className="resume-button">View Resume</button>
-          <button className="about-button">About</button>
-        </div>
+    <a href="https://drive.google.com/file/d/1l2edAEFqBCJHjb3Ry7-3IinueZttpFQM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <button className="resume-button">View Resume</button>
+    </a>
+    <a href="#about-me-section">
+        <button className="about-button">About</button>
+    </a>
+</div>
+
+
       </div>
       <div className="home-image">
         <img src={david} alt="David Emmanuel" />
