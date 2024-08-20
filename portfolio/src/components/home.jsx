@@ -6,7 +6,7 @@ const Home = () => {
   const typingTextRef = useRef(null);
 
   useEffect(() => {
-    const texts = ["Software Engineer", "Machine Learning Enthusiast", "Full Stack Developer"];
+    const texts = ["Software Engineer.", "Full Stack Developer.", "Machine Learning Enthusiast.", "Data Scientist."];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

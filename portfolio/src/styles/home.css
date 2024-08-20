@@ -30,11 +30,13 @@
   font-size: 3rem;
   font-weight: 700;
   color: #000;
+  font-family: "Outfit", system-ui;
 }
 .home-text p {
   font-size: 1.5rem;
   font-weight: 400;
   color: #000;
+  font-family: "Moderustic", sans-serif;
 }
 
 .typing-text {

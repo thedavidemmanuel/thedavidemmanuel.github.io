@@ -1,0 +1,81 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 5%;
+    padding-top: 150px;
+    padding-left: 0px;
+    gap: 40px; // Increased gap for better separation
+    background-color: #f9f9f9;
+}
+
+.programmer-gif {
+    flex: 0 0 auto; // Prevents stretching
+    
+    img {
+        width: 400px; // Reduced from 600px to give more space to text
+        height: auto; // Maintain aspect ratio
+        display: block; // Removes any extra space below the image
+        object-fit: contain; // Ensures the entire GIF is visible
+        background-color: #f9f9f9; // Matches the container background
+    }
+}
+
+.about-content {
+    flex: 1; // Takes up remaining space
+
+    h2 {
+        font-size: 2.5em;
+        font-family: "Moderustic", sans-serif;
+        color: #333;
+        margin-bottom: 20px;
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 3px;
+            background-color: #0066cc;
+        }
+    }
+
+    p {
+        font-size: 1.1em;
+        font-family: "Outfit", system-ui;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .programmer-gif {
+        img {
+            width: 300px; // Smaller on tablets
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    .programmer-gif, .about-content {
+        flex: 0 0 100%;
+    }
+
+    .programmer-gif {
+        margin-bottom: 30px;
+        
+        img {
+            width: 100%; // Full width on mobile
+            max-width: 400px; // But not larger than 400px
+            margin: 0 auto; // Center the image
+        }
+    }
+}
