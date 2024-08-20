@@ -1,12 +1,19 @@
 .about-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   padding: 100px 5%;
   padding-top: 150px;
-  padding-left: 0px;
-  gap: 40px;
   background-color: #f9f9f9;
+}
+
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+  width: 100%;
 }
 
 .programmer-gif {
@@ -48,15 +55,26 @@
   margin-bottom: 15px;
 }
 
+.skills-section {
+  width: 100%;
+  margin-top: 40px;
+}
+.skills-section h3 {
+  font-size: 2em;
+  font-family: "Moderustic", sans-serif;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .programmer-gif img {
     width: 300px;
   }
 }
 @media (max-width: 768px) {
-  .about-container {
+  .about-content-wrapper {
     flex-direction: column;
-    padding: 40px 5%;
   }
   .programmer-gif, .about-content {
     flex: 0 0 100%;
