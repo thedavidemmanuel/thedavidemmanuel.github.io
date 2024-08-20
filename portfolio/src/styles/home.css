@@ -1,0 +1,42 @@
+.home-main {
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.home-image img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.home-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+}
+.home-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.typing-text {
+  color: #1E90FF;
+}/*# sourceMappingURL=home.css.map */

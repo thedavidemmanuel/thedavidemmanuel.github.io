@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Header-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  padding-right: 100px;
+  padding-left: 0px;
+}
+.Header-class .logo img {
+  width: 250px;
+}
+.Header-class .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.Header-class .menu .menu-item {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.Header-class .social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.Header-class .social-icons i {
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+}
+.Header-class .social-icons .social-icon {
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+}
+.Header-class button {
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #D9D9D9;
+}
+.Header-class button:hover {
+  background-color: #812eda;
+  color: white;
+}/*# sourceMappingURL=header.css.map */
