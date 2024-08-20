@@ -4,7 +4,11 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaNodeJs, FaJava, FaPytho
 import { SiNextdotjs, SiTailwindcss, SiExpress, SiMongodb, SiCsharp, SiDotnet, SiSpringboot, SiMicrosoftsqlserver, SiFlask, SiDjango, SiR, SiTableau, SiPostman, SiJira, SiJupyter, SiApachehadoop } from 'react-icons/si';
 import { BsBootstrap, BsSlack } from 'react-icons/bs';
 import { DiSpark } from 'react-icons/di';
+import { DiPostgresql } from "react-icons/di";
+import { SiTensorflow, SiPandas, SiNumpy, SiPytorch, SiGooglecolab, SiDocker, SiFastapi } from "react-icons/si";
 import { TbBrandFigma } from 'react-icons/tb';
+import { VscVscode } from "react-icons/vsc";
+import { AiFillThunderbolt } from "react-icons/ai";
 
 
 const skillsData = [
@@ -27,25 +31,22 @@ const skillsData = [
       { name: 'Node.js', icon: <FaNodeJs /> },
       { name: 'Express.js', icon: <SiExpress /> },
       { name: 'MongoDB', icon: <SiMongodb /> },
-    //   { name: 'C#', icon: <SiCsharp /> },
-      { name: '.NET', icon: <SiDotnet /> },
-    //   { name: 'ASP.NET Core', icon: <SiDotnet /> },
-    //   { name: 'Java', icon: <FaJava /> },
-      { name: 'Spring Boot', icon: <SiSpringboot /> },
+      { name: 'PostgreSQL', icon: <DiPostgresql /> },
+      { name: 'FastAPI', icon: <SiFastapi /> },
       { name: 'SQL Server', icon: <SiMicrosoftsqlserver /> },
       { name: 'Flask', icon: <SiFlask /> },
       { name: 'Django', icon: <SiDjango /> },
     ]
   },
   {
-    section: 'Data Science',
+    section: 'Machine Learning',
     skills: [
       { name: 'Python', icon: <FaPython /> },
       { name: 'R', icon: <SiR /> },
-      { name: 'SQL', icon: <SiMicrosoftsqlserver /> },
-      { name: 'Hadoop', icon: <SiApachehadoop /> },
-      { name: 'Spark', icon: <DiSpark /> },
-      { name: 'Hive', icon: <FaHive /> },
+      { name: 'TensorFlow', icon: <SiTensorflow /> },
+      { name: 'PyTorch', icon: <SiPytorch /> },
+      { name: 'Numpy', icon: <SiNumpy /> },
+      { name: 'Pandas', icon: <SiPandas /> },
       { name: 'Tableau', icon: <SiTableau /> },
       { name: 'Power BI', icon: <SiTableau /> },
     ]
@@ -55,11 +56,12 @@ const skillsData = [
     skills: [
       { name: 'Git', icon: <FaGitAlt /> },
       { name: 'GitHub', icon: <FaGithub /> },
-      { name: 'Jira', icon: <SiJira /> },
+      { name: 'Docker', icon: <SiDocker /> },
       { name: 'Figma', icon: <TbBrandFigma /> },
       { name: 'Slack', icon: <BsSlack /> },
       { name: 'Jupyter', icon: <SiJupyter /> },
-      { name: 'Postman', icon: <SiPostman /> },
+      { name: 'Colab', icon: <SiGooglecolab /> },
+      { name: 'VS Code', icon: <VscVscode /> },
     ]
   },
 ];
