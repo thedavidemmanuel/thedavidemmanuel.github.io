@@ -68,12 +68,12 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <Box sx={{ flexGrow: 1, p: 3, backgroundColor: 'white' }}>
+    <Box sx={{ flexGrow: 1, p: 3, backgroundColor: '#f9f9f9' }}>
       {/* <Typography variant="h3" gutterBottom sx={{ color: 'white', mb: 4 }}>Skills</Typography> */}
       <Grid container spacing={4}>
         {skillsData.map((section) => (
           <Grid item xs={12} md={6} key={section.section}>
-            <Paper elevation={3} sx={{ p: 2, backgroundColor: 'white', color: '#333', borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: 2, backgroundColor: '#f9f9f9', color: '#333', borderRadius: 2 }}>
               <Typography variant="h5" gutterBottom sx={{ mb: 2 }}>{section.section}</Typography>
               <Grid container spacing={2}>
                 {section.skills.map((skill) => (
@@ -81,7 +81,7 @@ const Skills = () => {
                     <Paper elevation={1} sx={{ 
                       p: 2, 
                       backgroundColor: '#1e3a8a', 
-                      color: 'white', 
+                      color: '#f9f9f9', 
                       borderRadius: 2, 
                       display: 'flex', 
                       flexDirection: 'column', 

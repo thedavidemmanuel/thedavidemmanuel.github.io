@@ -1,15 +1,39 @@
 .home-main {
   display: flex;
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 120px;
   align-items: center;
   justify-content: center;
   gap: 150px;
+}
+@media (max-width: 1024px) {
+  .home-main {
+    gap: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .home-main {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 40px;
+  }
 }
 
 .home-image img {
   max-width: 400px;
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .home-image img {
+    max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .home-image img {
+    max-width: 250px;
+    order: -1;
+  }
 }
 
 .cursor {
@@ -33,21 +57,47 @@
   color: #000;
   font-family: "Outfit", system-ui;
 }
+@media (max-width: 1024px) {
+  .home-text h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .home-text h1 {
+    font-size: 2rem;
+  }
+}
 .home-text p {
   font-size: 1.5rem;
   font-weight: 400;
   color: #000;
   font-family: "Moderustic", sans-serif;
 }
+@media (max-width: 1024px) {
+  .home-text p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .home-text p {
+    font-size: 1.1rem;
+  }
+}
 
 .typing-text {
-  color: #1E90FF;
+  color: #478ccf;
 }
 
 .button-container {
   display: flex;
   gap: 20px;
   margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .resume-button,
@@ -60,20 +110,29 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+@media (max-width: 768px) {
+  .resume-button,
+  .about-button {
+    width: auto;
+    max-width: none;
+  }
+}
 
 .resume-button {
-  background-color: #1E90FF;
+  background-color: #4535c1;
   color: white;
 }
 .resume-button:hover {
-  background-color: #1873CC;
+  background-color: #36c2ce;
+  color: #000000;
 }
 
 .about-button {
   background-color: white;
-  color: #1E90FF;
-  border: 2px solid #1E90FF;
+  color: #000000;
+  border: 2px solid #478ccf;
 }
 .about-button:hover {
-  background-color: #F0F8FF;
+  background-color: #478ccf;
+  color: white;
 }/*# sourceMappingURL=home.css.map */

@@ -11,16 +11,34 @@
   padding: 1rem 2rem;
   padding-top: 0px;
   padding-right: 100px;
-  padding-left: 0px;
+  padding-left: 70px;
+}
+@media (max-width: 768px) {
+  .Header-class {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
 }
 .Header-class .logo img {
-  width: 250px;
+  width: 80px;
 }
 .Header-class .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .Header-class .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    display: none;
+  }
+  .Header-class .menu.show {
+    display: flex;
+  }
 }
 .Header-class .menu .menu-item {
   margin-left: 1rem;
@@ -34,11 +52,29 @@
   display: flex;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .Header-class .menu .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
 .Header-class .social-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .Header-class .social-icons {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    display: none;
+  }
+  .Header-class .social-icons.show {
+    display: flex;
+  }
 }
 .Header-class .social-icons i {
   font-size: 1.5rem;
@@ -51,7 +87,7 @@
   cursor: pointer;
 }
 .Header-class button {
-  border: 2px solid #5858db;
+  border: 2px solid #4535C1;
   padding: 15px;
   border-radius: 15px;
   background-color: #ffffff;
@@ -59,7 +95,26 @@
   font-family: "Moderustic", sans-serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 768px) {
+  .Header-class button {
+    margin-top: 1rem;
+  }
+}
 .Header-class button:hover {
-  background-color: #3668df;
+  background-color: #4535C1;
   color: white;
+}
+.Header-class .hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .Header-class .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
 }/*# sourceMappingURL=header.css.map */

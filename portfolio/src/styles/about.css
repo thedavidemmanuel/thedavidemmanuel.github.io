@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 5%;
-  padding-top: 150px;
   background-color: #f9f9f9;
 }
 
@@ -14,6 +12,9 @@
   gap: 40px;
   margin-bottom: 60px;
   width: 100%;
+  background-color: #77E4C8;
+  padding: 100px 5%;
+  padding-top: 150px;
 }
 
 .programmer-gif {
@@ -25,7 +26,7 @@
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
-  background-color: #f9f9f9;
+  background-color: #77E4C8;
 }
 
 .about-content {

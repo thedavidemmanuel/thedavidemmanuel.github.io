@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react'
-import david from '../images/david.png'
-import '../styles/home.css'
+import React, { useEffect, useRef } from 'react';
+import david from '../images/david.svg';
+import '../styles/home.css';
 
 const Home = () => {
   const typingTextRef = useRef(null);
@@ -37,22 +37,21 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='home-main'>
+    <div className="home-main">
       <div className="home-text">
         <p>Hello, it's me (Not Adele)</p>
         <h1>David Emmanuel</h1>
-        <p>I am a <span ref={typingTextRef} className="typing-text"></span><span className="cursor">|</span></p>
+        <p>I am a <span className="typing-text" ref={typingTextRef}></span></p>
         <div className="button-container">
           <button className="resume-button">View Resume</button>
           <button className="about-button">About</button>
         </div>
       </div>
-
       <div className="home-image">
-        <img src={david} alt="david-picture" />
+        <img src={david} alt="David Emmanuel" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
