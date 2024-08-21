@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.bbaee1eb.css",
-    "main.js": "/static/js/main.35bb21fc.js",
-    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "main.css": "/static/css/main.ccfa86b1.css",
+    "main.js": "/static/js/main.26673826.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/programmer.gif": "/static/media/programmer.1e9cf305cd084f528f2b.gif",
     "static/media/david.svg": "/static/media/david.eb7662130de4423ca7489d741e54ebce.svg",
+    "static/media/project-4.png": "/static/media/project-4.5b1367ed73a0d6354aa7.png",
+    "static/media/project-1.png": "/static/media/project-1.a2b09461398c73ca43fe.png",
+    "static/media/project-2.png": "/static/media/project-2.f578e93de9e9a9cfc0b5.png",
+    "static/media/project-6.png": "/static/media/project-6.f14b75edd584e48c6873.png",
+    "static/media/goal-keeper-app.png": "/static/media/goal-keeper-app.f65700cd2ad1bc93e036.png",
+    "static/media/project-5.png": "/static/media/project-5.e0b99d4f329f297fd986.png",
     "static/media/logo.svg": "/static/media/logo.40c2066a734b3c8f03f1e0407cc73111.svg",
     "index.html": "/index.html",
-    "main.bbaee1eb.css.map": "/static/css/main.bbaee1eb.css.map",
-    "main.35bb21fc.js.map": "/static/js/main.35bb21fc.js.map",
-    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+    "main.ccfa86b1.css.map": "/static/css/main.ccfa86b1.css.map",
+    "main.26673826.js.map": "/static/js/main.26673826.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbaee1eb.css",
-    "static/js/main.35bb21fc.js"
+    "static/css/main.ccfa86b1.css",
+    "static/js/main.26673826.js"
   ]
 }
