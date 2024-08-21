@@ -1,7 +1,7 @@
 .home-main {
   display: flex;
   padding-top: 40px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   align-items: center;
   justify-content: center;
   gap: 150px;
@@ -36,21 +36,6 @@
   }
 }
 
-.cursor {
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .home-text h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -83,11 +68,40 @@
     font-size: 1.1rem;
   }
 }
-
-.typing-text {
+.home-text .typing-animation {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.home-text .typing-animation .typing-text {
   color: #478ccf;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(20) infinite;
+}
+.home-text .typing-animation .cursor {
+  animation: blink 0.7s infinite;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .button-container {
   display: flex;
   gap: 20px;

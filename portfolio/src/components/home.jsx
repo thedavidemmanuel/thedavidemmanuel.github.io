@@ -41,17 +41,18 @@ const Home = () => {
       <div className="home-text">
         <p>Hello, it's me (Not Adele)</p>
         <h1>David Emmanuel</h1>
-        <p>I am a <span className="typing-text" ref={typingTextRef}></span></p>
+        <div className="typing-animation">
+          <p>I am a <span className="typing-text" ref={typingTextRef}></span></p>
+          <span className="cursor">|</span>
+        </div>
         <div className="button-container">
-    <a href="https://drive.google.com/file/d/1l2edAEFqBCJHjb3Ry7-3IinueZttpFQM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-        <button className="resume-button">View Resume</button>
-    </a>
-    <a href="#about-me-section">
-        <button className="about-button">About</button>
-    </a>
-</div>
-
-
+          <a href="https://drive.google.com/file/d/1l2edAEFqBCJHjb3Ry7-3IinueZttpFQM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <button className="resume-button">View Resume</button>
+          </a>
+          <a href="#about-me-section">
+            <button className="about-button">About Me</button>
+          </a>
+        </div>
       </div>
       <div className="home-image">
         <img src={david} alt="David Emmanuel" />

@@ -34,22 +34,6 @@
     }
   }
   
-  .cursor {
-    animation: blink 0.7s infinite;
-  }
-  
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
   .home-text {
     h1 {
       font-size: 3rem;
@@ -80,10 +64,40 @@
         font-size: 1.1rem;
       }
     }
+  
+    .typing-animation {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+  
+      .typing-text {
+        color: #478ccf;
+        white-space: nowrap; // Add this line to prevent the text from wrapping
+        overflow: hidden;
+        animation: typing 4s steps(20) infinite;
+      }
+  
+      .cursor {
+        animation: blink 0.7s infinite;
+      }
+    }
   }
   
-  .typing-text {
-    color: #478ccf; // light blue color
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
   
   .button-container {

@@ -1,0 +1,101 @@
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Moderustic", sans-serif;
+}
+.portfolio p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Outfit", system-ui;
+}
+.portfolio p a {
+  color: #007bff;
+  text-decoration: none;
+}
+.portfolio p a:hover {
+  text-decoration: underline;
+}
+.portfolio .project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .portfolio .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio .project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.portfolio .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.portfolio .project-card:hover .project-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio .project-image {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.portfolio .project-image .project-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.portfolio .project-image .project-description .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.portfolio .project-image .project-description .tech-stack .tech-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: not-allowed;
+}
+.portfolio .project-image .project-description .view-project-button {
+  display: inline-block;
+  background-color: #478ccf;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+.portfolio .project-image .project-description .view-project-button:hover {
+  background-color: #36c2ce;
+}/*# sourceMappingURL=portfolio.css.map */
